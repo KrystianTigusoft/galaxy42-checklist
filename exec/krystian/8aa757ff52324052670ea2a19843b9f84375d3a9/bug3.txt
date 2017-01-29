@@ -1,0 +1,35 @@
+﻿
+=========================================================================================
+Regarding project: (see the directory containing this file in checklist git report)
+Project version gitrev: (see the directory containing this file in checklist git report)
+Platform: Linux devuan 3.16.0-4-686-pae
+
+=========================================================================================
+Situation:
+Connecting to g.meshnet.pl while using galaxy42
+
+=========================================================================================
+What you tried to do:
+For exapmple watching any video 
+
+=========================================================================================
+What action / command you run:
+./tunserver.elf --peer 192.166.218.58:19042-fd42:f6c4:9d19:f128:30df:b289:aef0:25f5
+
+=========================================================================================
+What happened then:
+program said:
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Uwaga! /home/user/galaxy42/src/tunserver.cpp:716 Rzuci wyjątek. Jaki:expected_not_found.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Uwaga! /home/user/galaxy42/src/tunserver.cpp:325 Rzuci wyjątek. Jaki:NO ROUTE known (at current time) to dst=hip=fd42:c6b0:a906:8596:4f47:1112:ecff:f955.
+
+=========================================================================================
+What should had happened instead:
+
+MARK* /home/user/galaxy42/src/tunserver.cpp:1035 UDP Socket read from direct sender_pip = 192.166.218.58:19042, size 156 bytes: 156:[0x1,0x3,),G,M,K,a,o ... 0xC6=198,0x4,0x0B=11,0x0]
+
+=========================================================================================
+

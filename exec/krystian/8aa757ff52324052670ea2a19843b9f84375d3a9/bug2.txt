@@ -1,0 +1,28 @@
+﻿
+=========================================================================================
+Regarding project: (see the directory containing this file in checklist git report)
+Project version gitrev: (see the directory containing this file in checklist git report)
+Platform: Linux devuan 3.16.0-4-686-pae
+
+=========================================================================================
+Situation:
+Using ping6 fd42:f6c4:9d19:f128:30df:b289:aef0:25f5 while using galaxy42
+
+=========================================================================================
+
+ping6 fd42:f6c4:9d19:f128:30df:b289:aef0:25f5
+
+=========================================================================================
+What happened then:
+program said:
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Uwaga! /home/user/galaxy42/src/tunserver.cpp:981 end2end tunnel does not exist, can not send OUR data from TUN to dst_hip=hip=fd42:f6c4:9d19:f128:30df:b289:aef0:25f5
+
+=========================================================================================
+What should had happened instead:
+
+MARK* /home/user/galaxy42/src/tunserver.cpp:1035 UDP Socket read from direct sender_pip = 192.166.218.58:19042, size 156 bytes: 156:[0x1,0x3,),G,M,K,a,o ... 0xC6=198,0x4,0x0B=11,0x0]
+
+=========================================================================================
+
